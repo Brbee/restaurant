@@ -1,0 +1,43 @@
+
+.everything-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.hundredVhSection{
+    height: fit-content;
+}
+.navbar h2{
+    margin: 0px;
+}
+
+/* .reservationWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+/* #modalBodyReservations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  } */
+  /* .searchReservation{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  } */
+  /* #reservationSearchRes{
+    width: 100%;
+    height: fit-content;
+    max-height: 500px;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    align-items: center;
+    grid-gap: 10px;
+  
+  } */

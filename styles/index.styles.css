@@ -1,0 +1,62 @@
+
+.everything-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.hundredVhSection{
+    height: 100vh;
+    background: url('../pictures/home.jpg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.navbar h2{
+    margin: 0px;
+}
+.buttonWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.reserveButton{
+    color: black;
+    font-size: 25px;
+    padding: 15px;
+    background: rgb(250,187,24);
+    background: linear-gradient(90deg, rgba(250,187,24,1) 0%, rgba(152,103,43,1) 100%);
+    border: none;
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.reserveButton::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(250,187,24,1) 100%, rgba(152,103,43,1) 100%);
+    z-index: -1;
+    transition: opacity 0.3s linear;
+    opacity: 0;
+    
+}
+
+.reserveButton:hover::before{
+    opacity: 1;
+}
+.reserveButton:hover{
+    color: white;
+}

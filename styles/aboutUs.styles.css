@@ -1,0 +1,25 @@
+
+.everything-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.hundredVhSection{
+    height: 70vh;
+    background: url('../pictures/home.jpg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.navbar h2{
+    margin: 0px;
+}
+
+.AboutRestaurnat{
+    font-size: larger;
+    background-color: rgb(241, 241, 241);
+}
+.AboutRestaurnat ul{
+    list-style: none;
+}

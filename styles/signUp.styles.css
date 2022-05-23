@@ -1,0 +1,53 @@
+
+.everything-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.hundredVhSection{
+    height: 100vh;
+    background: url('../images/backgroundMain.jpg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+.navbar{
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h2{
+    margin: 0px;
+}
+.loginSectionWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.loginSection{
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 5px black solid;
+    box-shadow: 3px 15px 24px 5px rgba(0,0,0,0.88);
+}
+.loginSection h2{
+    text-align: center;
+}
+.loginSection input{
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+    border: black 2px solid;
+}
+.loginSection input.empty{
+    border-color: red;
+}
+.loginSection input.notEmpty{
+    border-color: green;
+}

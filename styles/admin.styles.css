@@ -1,0 +1,158 @@
+
+.everything-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.hundredVhSection{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+}
+#buttonWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#modalBodyTables{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#restourantMap {
+    width: auto;
+    height: 90vh;
+    /* max-height: calc(100% - 5px); */
+    z-index: 0;
+    margin: 5px auto;
+  }
+  .modal-width{
+    width: 100%;
+  }
+  .singleTable{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    background-color: grey;
+    top: -10px;
+    left: -10px;
+    transition: background-color 0.5s;
+    border-radius: 10%;
+}
+.singleTable.free{
+  background-color: green;
+}
+.singleTable.free.selected{
+  background-color: gold;
+}
+.singleTable.notFree{
+  background-color: red;
+}
+.singleTable.selected{
+  background-color: gold;
+}
+
+#tablesFormWrapper{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+
+#modalBodyTablesAdd{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  max-height: 500px;
+  overflow: auto;
+}
+
+
+#modalBodyReservations{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.searchReservation{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#reservationSearchRes{
+  width: 100%;
+  height: fit-content;
+  max-height: 500px;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+
+}
+
+
+#modalBodyWorkers{
+  /* min-height: 500px; */
+}
+#addWorkersButton{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#workers{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto ;
+  height: fit-content;
+  max-height: 500px;
+  width: 100%;
+  grid-gap: 10px;
+}
+
+
+.loginSectionWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.loginSection{
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.loginSection h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.loginSection input{
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 15px;
+  border: black 2px solid;
+}
+.loginSection input.empty{
+  border-color: red;
+}
+.loginSection input.notEmpty{
+  border-color: green;
+}
+#errorMessage{
+  color: red;
+  text-align: center;
+}
+
+
+@media (max-width: 995px) {
+  #modalBodyTables {
+    flex-direction: column;
+  }
+  #restourantMap{
+    height: 300px;
+  }
+}
